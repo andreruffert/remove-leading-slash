@@ -1,0 +1,29 @@
+{
+  "name": "remove-leading-slash",
+  "version": "1.0.0",
+  "description": "Remove leading slashes from a given string",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreruffert/remove-leading-slash.git"
+  },
+  "keywords": [
+    "leading",
+    "slashes"
+  ],
+  "author": "André Ruffert (andreruffert.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreruffert/remove-leading-slash/issues"
+  },
+  "homepage": "https://github.com/andreruffert/remove-leading-slash#readme",
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
+}
