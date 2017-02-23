@@ -4,7 +4,7 @@
  * @return {String}
  */
 function removeLeadingSlash(str) {
-  return str.replace(/^\/+/g, '');
+  return str.replace(/^\/+/, '');
 }
 
 module.exports = removeLeadingSlash;
