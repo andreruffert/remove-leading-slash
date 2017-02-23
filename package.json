@@ -1,6 +1,6 @@
 {
   "name": "remove-leading-slash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove leading slashes from a given string",
   "main": "index.js",
   "files": [
