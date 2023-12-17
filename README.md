@@ -9,13 +9,13 @@
 ## Install
 
 ```console
-$ npm i remove-leading-slash -S
+$ npm i remove-leading-slash
 ```
 
 ## Usage
 
 ```js
-const removeLeadingSlash = require('remove-leading-slash');
+import removeLeadingSlash from 'remove-leading-slash';
 
 removeLeadingSlash('/some/random/path/');
 // => 'some/random/path/'
