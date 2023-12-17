@@ -1,5 +1,5 @@
 import test from 'ava';
-import removeLeadingSlash from './';
+import removeLeadingSlash from './index.js';
 
 test('removes leading slash', t => {
   const result = removeLeadingSlash('/some/random/path/');

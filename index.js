@@ -3,8 +3,6 @@
  * @param  {String} str
  * @return {String}
  */
-function removeLeadingSlash(str) {
+export default function removeLeadingSlash(str) {
   return str.replace(/^\/+/, '');
 }
-
-module.exports = removeLeadingSlash;
