@@ -8,8 +8,8 @@
 
 ## Install
 
-```console
-$ npm i remove-leading-slash
+```shell
+npm i remove-leading-slash
 ```
 
 ## Usage
