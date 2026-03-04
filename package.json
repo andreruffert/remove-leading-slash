@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/andreruffert/remove-leading-slash#readme",
   "devDependencies": {
-    "ava": "^6.0.1"
+    "ava": "^7.0.0"
   }
 }
