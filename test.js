@@ -1,32 +1,35 @@
-import test from 'ava';
+import test from 'node:test';
+import assert from 'node:assert/strict';
 import removeLeadingSlash from './index.js';
 
-test('removes leading slash', t => {
-  const result = removeLeadingSlash('/some/random/path/');
+test('removes leading slash', () => {
+  const input = '/some/random/path/';
+  const result = removeLeadingSlash(input);
   const expected = 'some/random/path/';
 
-  t.is(result, expected, `Expected "${result}" to be equal to "${expected}"`);
+  assert.strictEqual(result, expected);
 });
 
-test('removes multiple leading slashes', t => {
-  const result = removeLeadingSlash('///some/random/path/');
+test('removes multiple leading slashes', () => {
+  const input = '///some/random/path/';
+  const result = removeLeadingSlash(input);
   const expected = 'some/random/path/';
 
-  t.is(result, expected, `Expected "${result}" to be equal to "${expected}"`);
+  assert.strictEqual(result, expected);
 });
 
-test('does\'t remove trailing slash', t => {
-  const string = 'some/random/path/';
-  const result = removeLeadingSlash(string);
-  const expected = string;
+test("doesn't remove trailing slash", () => {
+  const input = 'some/random/path/';
+  const result = removeLeadingSlash(input);
+  const expected = input;
 
-  t.is(result, expected, `Expected "${result}" to be equal to "${expected}"`);
+  assert.strictEqual(result, expected);
 });
 
-test('string without slashes', t => {
-  const string = 'some random string';
-  const result = removeLeadingSlash(string);
-  const expected = string;
+test('string without slashes', () => {
+  const input = 'some random string';
+  const result = removeLeadingSlash(input);
+  const expected = input;
 
-  t.is(result, expected, `Expected "${result}" to be equal to "${expected}"`);
+  assert.strictEqual(result, expected);
 });

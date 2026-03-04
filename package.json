@@ -11,7 +11,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "node --test \"./test.js\""
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,5 @@
   "bugs": {
     "url": "https://github.com/andreruffert/remove-leading-slash/issues"
   },
-  "homepage": "https://github.com/andreruffert/remove-leading-slash#readme",
-  "devDependencies": {
-    "ava": "^6.0.1"
-  }
+  "homepage": "https://github.com/andreruffert/remove-leading-slash#readme"
 }
