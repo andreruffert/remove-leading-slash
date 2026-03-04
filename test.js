@@ -33,3 +33,16 @@ test('string without slashes', () => {
 
   assert.strictEqual(result, expected);
 });
+
+test('throws on non-string types', () => {
+  const expectedError = {
+    name: 'TypeError',
+    message: 'Expected a string'
+  };
+
+  assert.throws(() => removeLeadingSlash(null), expectedError);
+  assert.throws(() => removeLeadingSlash(undefined), expectedError);
+  assert.throws(() => removeLeadingSlash(123), expectedError);
+  assert.throws(() => removeLeadingSlash({}), expectedError);
+  assert.throws(() => removeLeadingSlash([]), expectedError);
+});

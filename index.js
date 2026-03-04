@@ -1,8 +1,11 @@
 /**
  * Remove leading slashes from a given string
- * @param  {String} str
+ * @param  {String} input
  * @return {String}
  */
-export default function removeLeadingSlash(str) {
-  return str.replace(/^\/+/, '');
+export default function removeLeadingSlash(input) {
+  if (typeof input !== 'string') {
+    throw new TypeError('Expected a string');
+  }
+  return input.replace(/^\/+/, '');
 }
