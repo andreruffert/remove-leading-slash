@@ -46,3 +46,11 @@ test('throws on non-string types', () => {
   assert.throws(() => removeLeadingSlash({}), expectedError);
   assert.throws(() => removeLeadingSlash([]), expectedError);
 });
+
+test('single slash returns empty string', () => {
+  const input = '/';
+  const expected = '';
+  const result = removeLeadingSlash(input);
+
+  assert.strictEqual(result, expected);
+});
